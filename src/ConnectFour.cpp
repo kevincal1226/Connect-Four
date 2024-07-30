@@ -69,8 +69,7 @@ bool ConnectFour::checkWin(int row, int col, const char player, int count, const
     if (row < 0 || col < 0 || row >= BOARD_ROW_SIZE || col >= BOARD_COL_SIZE || board[row][col] != player) {
         return false;
     }
-    ++count;
-    if (count >= NUMBER_TO_WIN) {
+    if (++count >= NUMBER_TO_WIN) {
         return true;
     }
     return ConnectFour::checkWin(row + DIRECTIONS[dir].first, col + DIRECTIONS[dir].second, player, count, dir);
@@ -78,3 +77,5 @@ bool ConnectFour::checkWin(int row, int col, const char player, int count, const
 
 // new stuff
 //
+
+// i am editing
