@@ -75,4 +75,3 @@ bool ConnectFour::checkWin(int row, int col, const char player, int count, const
     }
     return ConnectFour::checkWin(row + DIRECTIONS[dir].first, col + DIRECTIONS[dir].second, player, count, dir);
 }
-// more comments
